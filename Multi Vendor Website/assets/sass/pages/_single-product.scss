@@ -1,0 +1,241 @@
+/************************
+   single-product start
+ ************************/
+
+.font-size {
+  font-size: 12px;
+}
+.single-product-info {
+  .product-body {
+    .product-price {
+      .del {
+        font-weight: fontweight(regular);
+        line-height: 20px;
+        color: $del;
+        margin-right: 10px;
+        font-size: 13px;
+      }
+
+      .onsale {
+        font-weight: fontweight(semibold);
+        line-height: 30px;
+        color: $color-dark;
+        font-size: 15px;
+      }
+    }
+    .my-badge {
+      width: inherit !important;
+      height: inherit !important;
+      font-weight: fontweight(regular);
+      font-size: 12px;
+      line-height: 25px;
+      color: white;
+      padding: 0 10px 0 10px;
+      background: #292929;
+      vertical-align: 4px;
+      border-radius: 5px;
+      text-transform: capitalize;
+    }
+  }
+}
+.single-product-head {
+  .title {
+    line-height: 1;
+    font-weight: fontweight(medium);
+    color: $color-dark;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .star-content {
+    .star-on {
+      margin: 0 1px 0 0;
+      color: $color-warning;
+      font-weight: fontweight(regular);
+      line-height: 1;
+      font-size: 16px;
+    }
+    a {
+      font-size: 12px;
+      font-weight: fontweight(regular);
+      line-height: 1;
+
+      span {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+// theme3
+.theme3 {
+  .star-content {
+    a {
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+// product-tab-menu single-product
+
+.product-tab-menu {
+  &.single-product {
+    .nav-item {
+      .nav-link {
+        text-transform: capitalize;
+        color: $body-color;
+        line-height: 1;
+        padding: 0 0 15px 0;
+        margin: 0 30px;
+        font-size: 18px;
+
+        font-weight: fontweight(medium);
+        border: 0px;
+        &:hover {
+          color: $color-dark;
+          background: $color-white;
+        }
+        &.active {
+          color: $color-dark;
+          background: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.single-product-desc {
+  padding-top: 40px;
+  ul {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+.studio-thumb {
+  img {
+    border: 1px solid $border-color;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-weight: fontweight(medium);
+    color: $color-dark;
+    line-height: 24px;
+    font-size: 0.9375rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  h6 {
+    font-size: 1rem;
+    color: $color-dark;
+    font-weight: fontweight(bold);
+    small {
+      font-weight: fontweight(regular);
+      font-size: 14px;
+      color: $body-color;
+    }
+  }
+}
+
+.product-features {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    li {
+      flex: 1 0 40%;
+
+      font-weight: fontweight(regular);
+      background: $feature;
+      padding: 0.625rem;
+      margin-right: 0.625rem;
+      min-height: 2.5rem;
+      word-break: normal;
+      text-transform: capitalize;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.grade-content {
+  .grade {
+    font-weight: fontweight(semibold);
+    text-transform: capitalize;
+    font-size: 14px;
+    color: $instock;
+    margin-right: 10px;
+  }
+  .star-on {
+    color: $color-warning;
+
+    font-weight: fontweight(regular);
+    font-size: 18px;
+  }
+
+  .title {
+    font-weight: fontweight(semibold);
+    text-transform: capitalize;
+    font-size: 14px;
+    color: $instock;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    color: $color-dark;
+    margin-bottom: 10px;
+
+    font-weight: fontweight(semibold);
+    line-height: 18px;
+    font-size: 14px;
+    padding-top: 9px;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 18px;
+    font-size: 14px;
+    color: $grey-soft;
+  }
+}
+
+.group-img {
+  img {
+    max-width: 80px;
+  }
+}
+
+.product-grouped {
+  .title {
+    margin-bottom: 0.8rem;
+    color: $color-dark;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  span {
+    font-size: 12px;
+    color: $body-color;
+    line-height: 1;
+  }
+}
+
+.block-reassurance {
+  border-top: 1px solid #ebebeb;
+  margin-top: 30px;
+  padding-top: 30px;
+  img {
+    margin-right: 10px;
+  }
+  li {
+    font-size: 12px;
+    color: $body-color;
+    font-weight: fontweight(regular);
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/************************
+   single-product End
+ ************************/

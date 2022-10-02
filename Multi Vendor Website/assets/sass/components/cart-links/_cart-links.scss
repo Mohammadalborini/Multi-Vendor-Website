@@ -1,0 +1,62 @@
+/*************************************
+   cart-block-links CSS 
+*************************************/
+.cart-block-links {
+  li {
+    margin-right: 5px;
+
+    // @include max-screen(1200, 1399) {
+    //   margin-right: 20px;
+    // }
+    // @include max-screen(992, 1199) {
+    //   margin-right: 15px;
+    // }
+
+    a {
+      font-size: 19px;
+      height: 40px;
+      line-height: 40px;
+      width: 40px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 100%;
+    }
+  }
+
+  // .cart-total {
+  //   top: -5px;
+  //   margin-left: 10px;
+  // }
+}
+
+// theme1
+.cart-block-links {
+  &.theme1 a {
+    color: $color-dark;
+    &:hover {
+      color: $color-white;
+      background: $black;
+    }
+  }
+}
+// theme2
+.cart-block-links {
+  &.theme2 a {
+    color: $color-white !important;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+// theme3
+.cart-block-links {
+  &.theme3 a {
+    color: $color-dark;
+    &:hover {
+      color: $theme-color3;
+    }
+  }
+}
+/*************************************
+   cart-block-links CSS  END
+*************************************/

@@ -1,0 +1,30 @@
+/*------------------*
+# Top Nave
+*------------------*/
+
+.static-info {
+  p {
+    font-size: 12px;
+    line-height: 40px
+  }
+}
+
+.header-top-social li {
+  margin: 0 20px 0 0;
+}
+
+.header-top-social li a {
+  line-height: 40px;
+  color: #929292 !important;
+  height: 40px;
+  font-size: 16px;
+
+  &:hover {
+    color: $theme-color !important;
+  }
+}
+
+
+/*------------------*
+# Top Nave ENd
+*------------------*/

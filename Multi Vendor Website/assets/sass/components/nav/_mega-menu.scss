@@ -1,0 +1,157 @@
+/*------------------*
+# mega-menu
+*------------------*/
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  background: $color-white;
+  padding: 40px 40px;
+  border: 1px solid $dropborder;
+  margin: 0 15px;
+  transform-style: preserve-3d;
+}
+
+.main-menu {
+  li {
+    &:hover > {
+      .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+    }
+  }
+}
+
+.mega-menu {
+  > li {
+    margin: 0;
+  }
+}
+
+.mega-menu li ul li {
+  margin: 0;
+}
+
+.mega-menu li > ul li:last-child a {
+  padding-bottom: 0;
+}
+
+.mega-menu li > ul li > a:hover {
+  padding-left: 15px;
+}
+
+.mega-menu li ul li.mega-menu-title {
+  margin-bottom: 10px;
+}
+
+.mega-menu li ul li.mega-menu-title a {
+  color: $color-dark;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: fontweight(semibold);
+  padding: 0 !important;
+}
+.mega-menu li a {
+  color: $body-color;
+  text-align: left;
+  padding: 0 0 5px;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-weight: fontweight(regular);
+  font-size: 12px;
+
+}
+
+//  mega-menu-custom-with
+
+.mega-menu-custom-with {
+  max-width: 1110px;
+  min-width: 1110px;
+  left: 0;
+  @include max-screen(1500) {
+    min-width: 900px;
+    left: 0%;
+    right: 0%;
+  }
+}
+
+// theme1
+.theme1 {
+  .mega-menu {
+    li {
+      ul {
+        li {
+          &.mega-menu-title {
+            a {
+              &:hover {
+                color: $theme-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// blog-ctry-menu
+
+.blog-ctry-menu {
+  li {
+    a {
+      position: relative;
+      font-weight: fontweight(regular);
+      color: $body-color;
+      display: block;
+      text-transform: capitalize;
+      line-height: 35px;
+      font-size: 13px;
+      &::before {
+        content: "\f2c7";
+        position: absolute;
+        display: inline-block;
+        font-family: "Ionicons";
+        right: 0;
+      }
+      &:hover{
+        color: $theme-color;
+      }
+    }
+    &.active {
+      a {
+        &::before {
+          content: "\f462";
+        }
+      }
+    }
+    // category-sub-menu
+    ul.category-sub-menu {
+      display: none;
+      li {
+        a {
+          font-size: 13px;
+          line-height: 35px;
+          padding: 0 10px;
+          display: block;
+          color: $body-color;
+          &::before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------------------*
+# mega-menu END
+*------------------*/

@@ -1,0 +1,211 @@
+/*------------------*
+# Footer
+*------------------*/
+
+.social-network {
+  .title {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: fontweight(semibold);
+    color: $color-dark;
+  }
+
+  li {
+    margin: 0 10px 0 0;
+
+    a {
+      display: block;
+      color: $color-dark;
+      background: $color-white;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 16px;
+      @include border-radius(50%);
+    }
+  }
+}
+
+// theme1
+.theme1 {
+  .social-network {
+    li {
+      a {
+        color: $sociallink;
+        background: $border-color;
+
+        &:hover {
+          color: $color-white;
+          background: $color-dark;
+        }
+      }
+    }
+  }
+}
+
+
+
+.address {
+  margin: 0;
+}
+
+.address-widget {
+  .title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .text {
+    line-height: 1;
+    color: $body-color;
+    font-size: 13px;
+  }
+}
+
+// theme1
+.theme1 {
+  .address-widget {
+    .title {
+      a {
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* footer-menu */
+
+.footer-widget {
+  .section-title {
+    .title {
+      font-weight: fontweight(semibold);
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+
+
+// footer-menu
+.footer-menu {
+  li {
+
+    a {
+      line-height: 26px;
+      display: inline-block;
+      text-transform: capitalize;
+      font-size: 12px;
+      margin-bottom: 3px;
+
+      &:hover {
+        padding-left: 10px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      a {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.copyright-menu {
+    li {
+      margin-left: 20px;
+
+      a {
+        margin-bottom: 0px;
+
+        &:hover {
+          padding-left: 0px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+
+// theme1
+.theme1 {
+  .footer-menu {
+    li {
+      a {
+        color: $body-color;
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* coppy-right */
+
+.coppy-right {
+  a {
+    color: $focus-color;
+  }
+
+  p {
+    line-height: 26px;
+    color: $title-text-color;
+    font-size: 12px;
+  }
+}
+
+// theme1
+.theme1 {
+  .coppy-right {
+    a {
+      color: $theme-color;
+
+      &:hover {
+        color: $theme-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+address span {
+  line-height: 26px;
+  display: block;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+address span:nth-child(4) {
+  color: $color-dark;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+
+/******************************** 
+    footer section End
+  ********************************/

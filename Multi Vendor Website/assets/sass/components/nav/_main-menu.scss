@@ -1,0 +1,45 @@
+/*------------------*
+# Main-menu
+*------------------*/
+.main-menu {
+  li {
+    a {
+      display: block;
+      font-weight: fontweight(semibold);
+      padding: 10px 18px;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 30px;
+
+      i {
+        font-size: 16px;
+        position: relative;
+        top: 1px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// theme1
+.theme1 {
+  li {
+    a {
+      color: $color-dark;
+    }
+
+    &:hover>a {
+      color: $theme-color;
+    }
+
+    &.active>a {
+      color: $theme-color;
+    }
+  }
+}
+
+
+
+/*------------------*
+# Main-menu END
+*------------------*/

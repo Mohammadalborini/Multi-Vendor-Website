@@ -1,0 +1,47 @@
+.testimonial-init {
+    background-color: $color-grey-light;
+    padding: 65px;
+
+    @include max-screen(767) {
+
+        padding: 30px;
+    }
+
+    .testimonial-content {
+        max-width: 80%;
+        @include max-screen(767){
+            max-width: 100%;
+        }
+        margin: auto;
+        cursor: grab;
+
+        img {
+            width: 70px;
+
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 21px;
+            color: #cecece;
+        }
+
+        h4 {
+
+            font-size: 14px;
+            font-weight: fontweight(semibold);
+            line-height: 1;
+            color: $color-dark;
+        }
+
+        a {
+            font-weight: fontweight(regular);
+            font-size: 12px;
+            line-height: 1;
+            color: #929292;
+        }
+    }
+}

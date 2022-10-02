@@ -1,0 +1,40 @@
+.news-letter-wrapper {
+    border-top: 1px solid $border-color;
+}
+
+.news-letter-form {
+
+    max-width: 620px;
+    margin: auto;
+
+    .form-control {
+        height: 55px;
+        color: $del;
+        padding: 0 150px 0 20px;
+        line-height: 32px;
+        font-size: 12px;
+        border: 2px solid $border-color;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        @include border-radius(0px);
+    }
+}
+
+.form-title {
+    .text {
+        font-size: 13px;
+    }
+
+    .title {
+        font-weight: fontweight(medium);
+        font-size: 24px;
+        color: $color-dark;
+        line-height: 1;
+        @include max-screen(576) {
+            line-height: 1.5;
+        }
+    }
+}

@@ -1,0 +1,333 @@
+/****************************
+ button style 
+ ****************************/
+// theme btn Normal
+.btn {
+  font-weight: fontweight(semibold);
+  line-height: 1;
+  font-size: 12px;
+  @include border-radius(0px);
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.theme--btn-default {
+  color: $color-white;
+  background: $theme-color;
+
+  &:hover {
+    color: $color-white;
+    background: $color-dark;
+  }
+}
+
+.theme--btn1 {
+  color: $color-dark;
+  background: $color-white;
+  border: 2px solid $color-dark;
+
+  &:hover {
+    color: $color-white;
+    background: $color-dark;
+  }
+}
+
+.theme--btn2 {
+  color: $color-white;
+  background: $theme-color2;
+
+  &:hover {
+    background: $color-dark;
+    color: $color-white;
+  }
+}
+
+.theme--btn3 {
+  color: $color-dark;
+  background: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background: $theme-color3;
+  }
+}
+
+// theme btn light
+.theme-btn--light {
+  background-color: $color-grey-light;
+  color: $color-dark;
+
+  &1 {
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+    }
+  }
+
+  &2 {
+    &:hover {
+      color: $color-white;
+      background: $theme-color2;
+    }
+  }
+
+  &3 {
+    &:hover {
+      color: $color-white;
+      background: $theme-color3;
+    }
+  }
+}
+
+// theme--btn-ddefault
+
+.theme--btn-ddefault {
+  background: $color-grey-light;
+  color: $color-dark;
+
+  &:hover {
+    background: $theme-color3;
+    color: $color-white;
+  }
+}
+
+// theme btn dark
+
+.theme-btn--dark {
+  color: $color-white;
+  background: $color-dark;
+
+  &1 {
+    color: $color-white;
+    background: $color-dark;
+
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+    }
+  }
+
+  &2 {
+    color: $color-white;
+    background: $color-dark;
+
+    &:hover {
+      color: $color-white;
+      background: $theme-color2;
+    }
+  }
+
+  &3 {
+    text-transform: uppercase;
+    color: $theme-color;
+    background: $color-white;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid $theme-color;
+    i{font-size: 20px;}
+
+    &-sm {
+      font-family: $gilroyRegular;
+      font-weight: fontweight(regular);
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+    }
+  }
+}
+
+// btn md
+.btn--sm {
+  padding: 5px 20px;
+}
+
+.btn--md {
+  padding: 10px 25px;
+}
+
+// btn lg
+.btn--lg {
+  padding: 22px 55px;
+
+  @include max-screen(767) {
+    padding: 15px 30px;
+  }
+}
+
+// btn xl
+.btn--xl {
+  padding: 15px 35px;
+
+}
+
+/* border radius in rounded class*/
+
+.rounded {
+  @include border-radius(3rem !important);
+}
+
+.btn-rounded {
+  @include border-radius(0 5px 5px 0);
+}
+
+.rounded-5 {
+  @include border-radius(5px);
+}
+
+/* custom button styles */
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  color: $color-white;
+  font-size: 21px;
+  text-align: center;
+
+  &.position-left {
+    right: auto;
+    left: 0;
+  }
+
+  @include transition(0.3s);
+
+  &.theme-bg {
+    &:hover {
+      background-color: $color-dark !important;
+      color: $color-white;
+    }
+  }
+
+  &.bg-dark {
+    &:hover {
+      background-color: $color-dark2 !important;
+      color: $color-white;
+    }
+  }
+
+  &.bg-white {
+    width: 45px;
+    font-size: 28px;
+    background-color: transparent !important;
+    padding: 0;
+    color: $color-dark !important;
+
+    &:hover {
+      color: $color-dark !important;
+    }
+  }
+}
+
+.news-letter-btn {
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  font-size: 12px;
+  border-left: 2px solid $border-color;
+  padding: 0 30px;
+
+  @include max-screen(991) {
+    padding: 0 20px;
+  }
+
+  @include max-screen(575) {
+    padding: 0 15px;
+  }
+
+  line-height: 30px;
+  height: 30px;
+  font-weight: fontweight(semibold);
+  color: $color-dark;
+  @include border-radius(0px);
+}
+
+// theme1
+.theme1 {
+  .news-letter-btn {
+    &:hover {
+      color: $theme-color;
+    }
+  }
+}
+
+
+.banner-btn {
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+// shop-now-btn
+
+.shop-now-btn {
+  font-size: 14px;
+  font-weight: fontweight(bold);
+  line-height: 1;
+  padding: 7px;
+  color: $color-white;
+  background: $theme-color;
+  display: block;
+  width: 100%;
+  @include transition(0.3s linear);
+  @include border-radius(0px);
+
+  &:hover {
+    color: $color-white;
+    background: $color-dark;
+  }
+}
+
+.blog-search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: fontweight(regular);
+  font-size: 18px;
+  color: $color-white;
+  padding: 0 20px;
+  line-height: 47px;
+  height: 100%;
+  @include border-radius(0 30px 30px 0);
+}
+
+.theme1 {
+  .blog-search-btn {
+    background: $theme-color;
+    border: 1px solid $theme-color;
+
+    &:hover {
+      background-color: $color-dark;
+      color: $color-white;
+      border-color: $color-dark;
+    }
+  }
+}
+
+
+.read-more {
+  font-weight: fontweight(medium);
+  font-size: 14px;
+  padding: 13px 20px;
+  color: $color-dark;
+  background: $color-white;
+  border: 2px solid $color-dark;
+
+  &:hover {
+    color: $color-white;
+    background: $color-dark;
+  }
+}
+
+
+/****************************
+ button style  END
+ ****************************/

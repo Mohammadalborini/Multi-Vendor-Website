@@ -1,0 +1,1 @@
+UPDATE all_inner_sliders SET image1='$img_content1', image2='$img_content2', image3='$img_content3', image4='$img_content4', image5='$img_content5', image6='$img_content6', image7='$img_content7', image8='$img_content8', image9='$img_content9'  WHERE id = $img_id

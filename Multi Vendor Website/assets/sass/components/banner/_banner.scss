@@ -1,0 +1,188 @@
+/****************************
+#Common Banner
+****************************/
+.banner-thumb {
+  img {
+    width: 100%;
+
+    @include max-screen(767) {
+      width: 100%;
+    }
+  }
+}
+
+/* hover-animation */
+
+.hover-animation {
+  a {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 51%;
+      bottom: 0;
+      content: "";
+      background: rgba(255, 255, 255, 0.2);
+      opacity: 1;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 50%;
+      content: "";
+      background: rgba(255, 255, 255, 0.2);
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    a {
+      &::before {
+        left: 0;
+        right: 0;
+        opacity: 0;
+        @include transition(0.9s linear);
+      }
+
+      &::after {
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        @include transition(0.9s linear);
+      }
+    }
+  }
+}
+
+// banner-content
+
+.banner-content {
+  position: absolute;
+  left: 45px;
+  top: 60px;
+  z-index: 9;
+
+  @include max-screen(767) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+
+  .text {
+    font-weight: fontweight(light);
+    font-size: 18px;
+  }
+
+  .title {
+    line-height: 1;
+    font-size: 24px;
+    font-weight: fontweight(medium);
+  }
+
+  .view-link {
+    color: $viewlink;
+    font-weight: fontweight(regular);
+    font-size: 13px;
+    display: inline-block;
+
+    span {
+      vertical-align: -2px;
+    }
+
+    &:hover {
+      color: $theme-color;
+    }
+  }
+
+  &.home-03 {
+    left: 30px;
+    top: 35px;
+    cursor: text;
+    .text {
+      font-size: 12px;
+      color: $body-color;
+    }
+
+    .title {
+      font-size: 18px;
+    }
+  }
+}
+
+.banner-content-large {
+  top: 50%;
+  left: 70px;
+
+  @include max-screen(575) {
+    left: 15px;
+  }
+
+  @include transform(translateY(-50%));
+
+  .text {
+    font-size: 20px;
+
+    @include max-screen(575) {
+      font-size: 18px;
+    }
+  }
+
+  .title {
+    font-size: 42px;
+
+    @include max-screen(575) {
+      font-size: 20px;
+    }
+  }
+
+  .view-link {
+    font-size: 18px;
+
+    &.mt-25 {
+      @include max-screen(575) {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.banner-lagre {
+  background: $bannerlarge;
+
+  @include max-screen(767) {
+    height: 260px;
+  }
+
+  @include max-screen(480) {
+    height: 160px;
+  }
+
+  img {
+    @include max-screen(576) {
+      position: relative;
+      height: 100%;
+      left: 60px;
+    }
+
+    @include max-screen(767) {
+      position: relative;
+      height: 100%;
+      left: 60px;
+      object-fit: cover;
+    }
+  }
+}
+
+.img-width-100 {
+  img {
+    @include max-screen(576) {
+      width: 100%;
+    }
+  }
+}
+/******************************** 
+#common-banner End
+********************************/

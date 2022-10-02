@@ -1,0 +1,394 @@
+/******************************** 
+    slick arrow style
+ ********************************/
+
+.slick-arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  top: 50%;
+  border: 1px solid $border-color;
+  background: $color-white;
+  color: $grey-soft;
+  text-align: center;
+  z-index: 1;
+  font-size: 14px;
+  @include transform(translateY(-50%));
+  @include border-radius(50%);
+}
+
+// .main-slider {
+//   .slick-prev {
+//     left: 0px;
+//   }
+//   &:hover {
+//     .slick-prev {
+//       left: -40px;
+//     }
+//   }
+//   .slick-next {
+//     right: 0px;
+//   }
+//   &:hover {
+//     .slick-next {
+//       right: -40px;
+//     }
+//   }
+// }
+
+// slick-nav
+.slick-nav {
+  .slick-prev {
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+
+    @include max-screen(1480) {
+      left: 0px;
+    }
+  }
+
+  &:hover {
+    .slick-prev {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .slick-next {
+    right: -20px;
+    opacity: 0;
+    visibility: hidden;
+
+    @include max-screen(1480) {
+      right: 0px;
+    }
+  }
+
+  &:hover {
+    .slick-next {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.position-tolp-right {
+  .slick-arrow {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    top: -60px;
+    font-size: 12px;
+    transform: translateY(0%);
+
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+      border-color: $theme-color;
+    }
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 43px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .slick-next {
+    right: 5px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// slick-nav-sync
+.slick-nav-sync {
+  .slick-prev {
+    background: transparent;
+    border: 0px;
+    left: -40px;
+  }
+
+  .slick-next {
+    background: transparent;
+    border: 0px;
+    right: -40px;
+  }
+}
+
+// slick-nav-brand
+.slick-nav-brand {
+  .slick-prev {
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .slick-prev {
+      left: -40px;
+      opacity: 1;
+      visibility: visible;
+
+      @include max-screen(1480) {
+        left: -10px;
+      }
+    }
+  }
+
+  .slick-next {
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .slick-next {
+      right: -40px;
+
+      @include max-screen(1480) {
+        right: -10px;
+      }
+
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// blog-init
+.blog-init {
+  .slick-prev {
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+
+    @include max-screen(1480) {
+      left: 0px;
+    }
+  }
+
+  &:hover {
+    .slick-prev {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .slick-next {
+    right: -20px;
+    opacity: 0;
+    visibility: hidden;
+
+    @include max-screen(1480) {
+      right: 0px;
+    }
+  }
+
+  &:hover {
+    .slick-next {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// theme1
+.theme1 .slick-arrow {
+  &:hover {
+    color: $color-white;
+    background: $theme-color;
+    border-color: $theme-color;
+  }
+}
+
+.position-top-right {
+  .slick-arrow {
+    top: -60px;
+    transform: translateY(0%);
+
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+      border-color: $theme-color;
+    }
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 55px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .slick-next {
+    right: 5px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+// theme1
+.theme1 {
+  .slick-nav-sync {
+    .slick-arrow {
+      &:hover {
+        color: $theme-color;
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+
+  }
+}
+
+
+/* slick progress */
+
+.slick-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  z-index: 1;
+
+  span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: $progress-color;
+    @include transition(0s linear);
+
+    &.active {
+      width: 100%;
+    }
+  }
+}
+
+/* slick dots style */
+.dots-style {
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      line-height: 1;
+
+      button {
+        width: 14px;
+        height: 14px;
+        text-indent: 2000px;
+        font-size: 0px;
+        display: block;
+        margin: 0 3px;
+        border: 2px solid transparent;
+        @include transition(0.3s);
+        @include transform(scale3d(0.7, 0.7, 0.7));
+        @include border-radius(50%);
+
+        &:hover {
+          @include transform(scale3d(1, 1, 1));
+        }
+      }
+    }
+  }
+}
+
+// popular-slider
+.testimonial-init {
+  &.dots-style {
+    .slick-dots {
+      position: static;
+      margin-top: 20px;
+
+      li {
+        display: inline-block;
+
+        button {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          background: #e7e7e7;
+          @include transition(0.3s linear);
+          @include transform(scale3d(1, 1, 1));
+        }
+
+        &.slick-active,
+        &:hover {
+          button {
+            background: $theme-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// theme1
+.theme1 {
+  .slick-dots {
+    li {
+      button {
+        background: $themedot2;
+
+        &:hover {
+          background: transparent;
+          border-color: $theme-color3;
+          @include transform(scale3d(1, 1, 1));
+        }
+      }
+
+      &.slick-active {
+        button {
+          background: transparent;
+          border-color: $theme-color3;
+          @include transform(scale3d(1, 1, 1));
+        }
+      }
+    }
+  }
+}
+
+// popular-slider
+// theme1
+
+.theme1 {
+  .popular-slider-init {
+    &.dots-style {
+      .slick-dots {
+        li {
+          button {
+            background: $color-dark;
+
+            &:hover {
+              background: $theme-color;
+            }
+          }
+
+          &.slick-active {
+            button {
+              width: 28px;
+              background: $theme-color;
+              @include border-radius(8px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************************** 
+    slick arrow style ENd
+ ********************************/

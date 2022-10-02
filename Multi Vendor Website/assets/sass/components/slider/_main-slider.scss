@@ -1,0 +1,130 @@
+/******************************** 
+    Main Slider
+ ********************************/
+
+.slick-slider {
+  background: transparent;
+}
+
+.slider-height {
+  height: 833px;
+  @include max-screen(1200, 1400) {
+    height: 700px;
+  }
+  @include max-screen(992, 1199) {
+    height: 600px;
+  }
+  @include max-screen(768, 991) {
+    height: 450px;
+  }
+  @include max-screen(767) {
+    height: 350px;
+  }
+}
+.slider-height2 {
+  height: 743px;
+  @include max-screen(1200, 1400) {
+    height: 600px;
+  }
+  @include max-screen(992, 1199) {
+    height: 480px;
+  }
+  @include max-screen(768, 991) {
+    height: 400px;
+  }
+  @include max-screen(767) {
+    height: 300px;
+  }
+  @include max-screen(576, 767) {
+    height: 350px;
+  }
+}
+.slider-height3{
+  height: 540px;
+
+  @include max-screen(992, 1199) {
+    height: 480px;
+  }
+  @include max-screen(768, 991) {
+    height: 400px;
+  }
+  @include max-screen(767) {
+    height: 300px;
+  }
+  @include max-screen(576, 767) {
+    height: 350px;
+  }
+}
+
+.pl-vw2 {
+	padding-left: 2.86608vw;
+}
+
+.slider-content {
+  .title {
+    font-weight: fontweight(medium);
+    font-size: 48px;
+    line-height: 1;
+    opacity: 0;
+    @include max-screen(992, 1199) {
+      font-size: 42px;
+    }
+    @include max-screen(768, 991) {
+      font-size: 35px;
+    }
+    @include max-screen(767) {
+      font-size: 28px;
+    }
+  }
+
+  .sub-title {
+    font-weight: fontweight(medium);
+    font-size: 48px;
+    line-height: 1;
+    opacity: 0;
+    @include max-screen(1200, 1600) {
+      font-size: 50px;
+    }
+    @include max-screen(992, 1199) {
+      font-size: 45px;
+    }
+    @include max-screen(768, 991) {
+      font-size: 35px;
+    }
+    @include max-screen(767) {
+      font-size: 30px;
+    }
+  }
+  .text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: fontweight(regular);
+    line-height: 1;
+    opacity: 0;
+
+    @include max-screen(768, 991) {
+      font-size: 16px;
+    }
+    @include max-screen(767) {
+      font-size: 18px;
+    }
+
+    &.mb-25 {
+      @include max-screen(767) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .btn {
+    opacity: 0;
+    &.mt-45 {
+      @include max-screen(767) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+/******************************** 
+# main slider End
+********************************/

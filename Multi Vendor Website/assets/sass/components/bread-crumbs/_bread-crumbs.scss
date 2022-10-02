@@ -1,0 +1,76 @@
+/****************************
+breadcrumb-section
+ ****************************/
+
+.breadcrumb-bg1 {
+  background: url("../img/bread-crumb/1.jpg") no-repeat center;
+  background-size: auto;
+  background-size: cover;
+  padding: 100px 0 200px 0;
+}
+
+.breadcrumb-title {
+  .title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+.breadcrumb-section {
+  @include max-screen(1200) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include max-screen(767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.breadcrumb-item {
+  text-transform: capitalize;
+
+  font-size: 12px;
+  line-height: 25px;
+  padding: 0px !important;
+  @include max-screen(450) {
+    margin: 5px 0px;
+  }
+  a {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  &::before {
+    content: "\f3d3";
+    color: $body-color !important;
+    margin: 0 10px;
+    content: "\f3d3";
+    font-family: "Ionicons";
+    padding: 0px !important;
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+  }
+}
+// theme1
+.theme1 {
+  .breadcrumb-item {
+    a {
+      color: $body-color;
+      &:hover {
+        color: $theme-color;
+      }
+    }
+    &.active {
+      color: $theme-color;
+    }
+  }
+}
+
+/****************************
+breadcrumb-section END
+ ****************************/

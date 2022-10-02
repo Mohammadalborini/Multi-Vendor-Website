@@ -1,0 +1,39 @@
+/******************************** 
+    product tab menu style
+ ********************************/
+.product-tab-menu {
+  .nav-item {
+    margin: 0 5px;
+    @include max-screen(560) {
+      margin: 0 5px 10px;
+    }
+    .nav-link {
+      font-weight: fontweight(medium);
+      line-height: 1;
+      font-size: 14px;
+      text-transform: capitalize;
+      padding: 15px 20px;
+      color: $color-dark;
+      border: 1px solid $tab-menu-border-color;
+      @include border-radius(0px);
+    }
+  }
+}
+
+// theme1
+.theme1 {
+  .nav-link {
+    &.active,
+    &:hover {
+      color: $color-white;
+      background: $theme-color;
+      border-color: $theme-color;
+    }
+  }
+}
+
+
+
+/******************************** 
+    product tab menu style END
+ ********************************/

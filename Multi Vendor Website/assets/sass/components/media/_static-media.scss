@@ -1,0 +1,34 @@
+/******************************** 
+     static media Css
+  ********************************/
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.static-media-wrap {
+  padding: 45px 30px;
+}
+
+.static-media2 {
+  .title {
+    font-size: 12px;
+    font-weight: fontweight(semibold);
+    line-height: 1;
+  }
+
+  .text {
+    line-height: 20px;
+    color: #929292;
+    font-size: 12px;
+    letter-spacing: 0.025em;
+  }
+}
+
+/******************************** 
+     static media Css End
+  ********************************/

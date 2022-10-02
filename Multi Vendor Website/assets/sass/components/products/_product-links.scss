@@ -1,0 +1,93 @@
+/******************************** 
+    product links style
+ ********************************/
+.product-links {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff;
+  padding:15px 7px;
+  box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(25px) translateZ(0);
+  perspective: 800px;
+  backface-visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+
+  li {
+    a {
+      display: block;
+      background: $color-white;
+      color: $color-dark;
+      height: 25px;
+      width: 25px;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #b4b4b4;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.product-card {
+  .card-body {
+    &:hover {
+      .product-links {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0) translateZ(0);
+        transform: translateY(0) translateZ(0);
+      }
+    }
+  }
+}
+// product-thumbnail
+.product-thumbnail {
+  img {
+    @include max-screen(575) {
+      width: 100%;
+    }
+  }
+}
+// theme1
+.theme1 {
+  .product-links {
+    li {
+      &:hover a {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+// theme2
+.theme2 {
+  .product-links {
+    li {
+      &:hover a {
+        background: $theme-color2;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// theme3
+.theme3 {
+  .product-links {
+    li {
+      &:hover a {
+        background: $theme-color3;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+/******************************** 
+    product links style END
+ ********************************/
